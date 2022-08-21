@@ -16,3 +16,121 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// front end mohamad start
+
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+
+Route::get('/register', function () {
+    return view('register');
+});
+
+
+
+Route::get('/form', function () {
+    return view('companyForm');
+});
+
+Route::get('/add-service', function () {
+    return view('add-service');
+});
+
+
+
+
+
+// front end mohamad end
+
+
+
+
+
