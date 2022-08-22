@@ -36,6 +36,21 @@
             <span class="menu-title">add  service</span>
           </a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/company">
+            <span class="icon-bg"><i class="mdi mdi-contacts menu-icon"></i></span>
+            <span class="menu-title">Add Company</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/keywords">
+            <span class="icon-bg"><i class="mdi mdi-contacts menu-icon"></i></span>
+            <span class="menu-title">Add Keyword</span>
+          </a>
+        </li>
+
+
         {{-- <li class="nav-item">
           <a class="nav-link" href="pages/forms/basic_elements.html">
             <span class="icon-bg"><i class="mdi mdi-format-list-bulleted menu-icon"></i></span>
