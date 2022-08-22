@@ -1,6 +1,11 @@
 <?php
 
+
 use App\Http\Controllers\CXController;
+
+use App\Http\Controllers\CompanyController;
+use App\Http\Controllers\KeywordController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,8 +31,18 @@ Route::post('text-feed' , [CXController::class , 'input_file']);
 
 
 
+// Route::get('/company', function () {
+//     return view('company');
+// });
+
+Route::get('/company', [CompanyController::class,'create']);
+
+Route::post('/addcompany', [CompanyController::class,'store']);
 
 
+Route::get('/keywords', [KeywordController::class,'create']);
+
+Route::post('/addkeyword', [KeywordController::class,'store']);
 
 
 
