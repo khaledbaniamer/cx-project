@@ -19,6 +19,7 @@ class CreateCXESTable extends Migration
             $table->unsignedBigInteger('service_id');
             $table->datetime('feedback_date');
             $table->string('feedback_source');
+            $table->string('feedback');
 
             $table->foreign('client_id')->references('id')->on('clients')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('service_id')->references('id')->on('services')->onDelete('cascade')->onUpdate('cascade');

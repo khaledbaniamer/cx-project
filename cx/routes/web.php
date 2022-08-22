@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CXController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::view('/text-feed' , 'text-feedback');
+Route::post('text-feed' , [CXController::class , 'input_file']);
 
 
 
