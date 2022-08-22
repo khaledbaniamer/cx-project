@@ -17,7 +17,6 @@ class CreateCXESTable extends Migration
             $table->id();
             $table->unsignedBigInteger('client_id');
             $table->unsignedBigInteger('service_id');
-            $table->string('feedback_code');
             $table->datetime('feedback_date');
             $table->string('feedback_source');
 

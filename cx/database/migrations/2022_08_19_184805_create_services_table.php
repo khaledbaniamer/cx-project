@@ -15,10 +15,9 @@ class CreateServicesTable extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->id();
-            $table->string('code');
             $table->string('name');
             $table->datetime('start_date');
-            $table->datetime('end_date');
+            $table->datetime('end_date')->nullable();
             $table->string('manager');
             $table->string('branch');
             $table->string('analyse1');
