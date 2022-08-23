@@ -49,6 +49,12 @@
             <span class="menu-title">Add Keyword</span>
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/client">
+            <span class="icon-bg"><i class="mdi mdi-contacts menu-icon"></i></span>
+            <span class="menu-title">Add Client</span>
+          </a>
+        </li>
 
 
         {{-- <li class="nav-item">
