@@ -19,7 +19,6 @@ class CreateKeywordsTable extends Migration
             $table->string('word');
             $table->string('weigth');
             $table->datetime('start_date');            
-            $table->datetime('end_date')->nullable();            
             $table->foreign('service_id')->references('id')->on('services')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
