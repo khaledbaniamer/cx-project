@@ -2118,6 +2118,6 @@
 				options: prediction4OptionsDark,
 			});
     }
-    
+
 	});
 })(jQuery);

@@ -26,6 +26,9 @@ Route::get('/', function () {
 Route::view('/text-feed' , 'text-feedback');
 Route::post('text-feed' , [CXController::class , 'input_file']);
 
+Route::get('fetch_comany' , [CXController::class , 'fetchAllCompany']);
+Route::get('fetch_service/{company_id}' , [CXController::class , 'fetchAllService']);
+
 
 
 
