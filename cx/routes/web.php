@@ -5,7 +5,7 @@ use App\Http\Controllers\CXController;
 
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\KeywordController;
-
+use App\Http\Controllers\ClientController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -145,6 +145,11 @@ Route::get('/add-service', function () {
 
 
 
+
+Route::view('/client' , 'client');
+// Route::get('/client', [ClientController::class,'index']);
+
+Route::post('addclient', [ClientController::class,'add']);
 
 
 // front end mohamad end

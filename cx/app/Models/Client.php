@@ -8,4 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Client extends Model
 {
     use HasFactory;
+    protected $fillable =[
+        'branch',
+        'name',
+        'birth_date',
+        'start_date',
+        'end_date',
+        'profession',
+        'country',
+        'contact_detials',
+        'company_id'
+    ];
 }
