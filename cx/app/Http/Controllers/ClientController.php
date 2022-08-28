@@ -4,18 +4,29 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Client;
+use Illuminate\Support\Facades\DB;
 
 class ClientController extends Controller
 {
     //
 
-    function index(){
-       return redirect('/client');
+    function index()
+    {
+        $comp = DB::table('companies')->get();
+
+        $data = array(
+            'list' => $comp
+        );
+
+        return view('client', $data);
     }
 
-    function add(Request $request){
+    function add(Request $request)
+    {
 
         $request->validate([
+            
+            'id' => 'unique:clients,id',
             'branch' => 'required',
             'name' => 'required',
             'birth_date' => 'required',
@@ -23,12 +34,12 @@ class ClientController extends Controller
             'profession' => 'required',
             'country' => 'required',
             'contact_detials' => 'required',
-            // 'company_id' => 'required',
+            'company_id' => 'required|min:1',
 
         ]);
 
         $query = Client::insert([
-
+            'id' => $request->input('id'),
             'branch' => $request->input('branch'),
             'name' => $request->input('name'),
             'birth_date' => $request->input('birth_date'),
@@ -43,11 +54,10 @@ class ClientController extends Controller
 
 
         if ($query) {
-            
+
             return back()->with('success', 'data added successfully');
         } else {
             return back()->with('fail', 'data not save');
         }
     }
-    
 }

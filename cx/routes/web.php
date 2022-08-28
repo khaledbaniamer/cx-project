@@ -149,8 +149,8 @@ Route::get('/add-service', function () {
 
 
 
-Route::view('/client' , 'client');
-// Route::get('/client', [ClientController::class,'index']);
+// Route::view('/client' , 'client');
+Route::get('/client', [ClientController::class,'index']);
 
 Route::post('addclient', [ClientController::class,'add']);
 
