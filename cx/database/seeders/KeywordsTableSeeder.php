@@ -26,5 +26,40 @@ class KeywordsTableSeeder extends Seeder
             'weigth' => Str::random(10),
             'start_date' => date('y/m/d H:i:s'),
         ]);
+
+        DB::table('keywords')->insert([
+            'service_id' => Service::inRandomOrder()->first()->id,
+            'word' => Str::random(10),
+            'weigth' => Str::random(10),
+            'start_date' => date('y/m/d H:i:s'),
+        ]);
+
+        DB::table('keywords')->insert([
+            'service_id' => Service::inRandomOrder()->first()->id,
+            'word' => Str::random(10),
+            'weigth' => Str::random(10),
+            'start_date' => date('y/m/d H:i:s'),
+        ]);
+
+        DB::table('keywords')->insert([
+            'service_id' => Service::inRandomOrder()->first()->id,
+            'word' => Str::random(10),
+            'weigth' => Str::random(10),
+            'start_date' => date('y/m/d H:i:s'),
+        ]);
+
+        DB::table('keywords')->insert([
+            'service_id' => Service::inRandomOrder()->first()->id,
+            'word' => Str::random(10),
+            'weigth' => Str::random(10),
+            'start_date' => date('y/m/d H:i:s'),
+        ]);
+
+        DB::table('keywords')->insert([
+            'service_id' => Service::inRandomOrder()->first()->id,
+            'word' => Str::random(10),
+            'weigth' => Str::random(10),
+            'start_date' => date('y/m/d H:i:s'),
+        ]);
     }
 }
