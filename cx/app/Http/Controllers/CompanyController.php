@@ -22,6 +22,16 @@ class CompanyController extends Controller
     public function store(Request $request, Company $inputs)
     {
 
+        $request->validate([
+
+            'company_name' => 'required',
+            'logo' => 'required',
+            'business_type' => 'required',
+            'branch' => 'required',
+            'country' => 'required',
+
+        ]);
+
         $logo = $request->file('logo')->getClientOriginalName();
 
         $path = $request->file('logo')->move(public_path('images'), $logo);
@@ -33,6 +43,6 @@ class CompanyController extends Controller
         $inputs->logo = $logo;
         $inputs->save();
 
-        return redirect()->back()->with('success', 'Company Saved Successfully');
+        return redirect()->back()->with('success', 'Company added successfully');
     }
 }
