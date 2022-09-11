@@ -6,6 +6,7 @@ use App\Http\Controllers\CXController;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\KeywordController;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\Dashboard;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -46,6 +47,9 @@ Route::post('/addcompany', [CompanyController::class,'store']);
 Route::get('/keywords', [KeywordController::class,'create']);
 
 Route::post('/addkeyword', [KeywordController::class,'store']);
+
+Route::get('/dashboard', [Dashboard::class,'create']);
+
 
 
 
@@ -122,9 +126,7 @@ Route::post('/addkeyword', [KeywordController::class,'store']);
 // front end mohamad start
 
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-});
+
 
 
 Route::get('/login', function () {

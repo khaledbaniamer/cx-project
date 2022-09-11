@@ -23,19 +23,12 @@
             </ul>
           </div>
         </li> --}}
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="/form">
             <span class="icon-bg"><i class="mdi mdi-contacts menu-icon"></i></span>
             <span class="menu-title"> Company form</span>
           </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="/add-service">
-            <span class="icon-bg"><i class="mdi mdi-contacts menu-icon"></i></span>
-            <span class="menu-title">add  service</span>
-          </a>
-        </li>
+        </li> -->
 
         <li class="nav-item">
           <a class="nav-link" href="/company">
@@ -43,12 +36,7 @@
             <span class="menu-title">Add Company</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/keywords">
-            <span class="icon-bg"><i class="mdi mdi-contacts menu-icon"></i></span>
-            <span class="menu-title">Add Keyword</span>
-          </a>
-        </li>
+
         <li class="nav-item">
           <a class="nav-link" href="/client">
             <span class="icon-bg"><i class="mdi mdi-contacts menu-icon"></i></span>
@@ -56,6 +44,19 @@
           </a>
         </li>
 
+        <li class="nav-item">
+          <a class="nav-link" href="/keywords">
+            <span class="icon-bg"><i class="mdi mdi-contacts menu-icon"></i></span>
+            <span class="menu-title">Add Keyword</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/text-feed">
+            <span class="icon-bg"><i class="mdi mdi-contacts menu-icon"></i></span>
+            <span class="menu-title">Add  Feedback</span>
+          </a>
+        </li>
 
         {{-- <li class="nav-item">
           <a class="nav-link" href="pages/forms/basic_elements.html">
@@ -91,7 +92,7 @@
             </ul>
           </div>
         </li> --}}
-        <li class="nav-item documentation-link">
+        <!-- <li class="nav-item documentation-link">
           <a class="nav-link"
             href="http://www.bootstrapdash.com/demo/connect-plus-free/jquery/documentation/documentation.html"
             target="_blank">
@@ -100,7 +101,7 @@
             </span>
             <span class="menu-title">Documentation</span>
           </a>
-        </li>
+        </li> -->
         <li class="nav-item sidebar-user-actions">
           <div class="user-details">
             <div class="d-flex justify-content-between align-items-center">
