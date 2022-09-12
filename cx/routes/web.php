@@ -6,6 +6,7 @@ use App\Http\Controllers\CXController;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\KeywordController;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\mainController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -127,14 +128,14 @@ Route::get('/dashboard', function () {
 });
 
 
-Route::get('/login', function () {
-    return view('login');
-});
+// Route::get('/login', function () {
+//     return view('login');
+// });
 
 
-Route::get('/register', function () {
-    return view('register');
-});
+// Route::get('/register', function () {
+//     return view('register');
+// });
 
 
 
@@ -155,6 +156,20 @@ Route::get('/client', [ClientController::class,'index']);
 Route::post('addclient', [ClientController::class,'add']);
 
 
+
+Route::get('/login', [mainController::class,'login']);
+
+Route::post('logincheckuser', [mainController::class,'logincheckuser']);
+
+
+
+Route::get('/register', [mainController::class,'register']);
+
+Route::post('checkregister', [mainController::class,'checkregister']);
+
+
+
+Route::get('logout',[mainController::class,'logout']);
 // front end mohamad end
 
 
