@@ -11,7 +11,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Connect Plus</title>
+    <title>CX</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../../assets/vendors/flag-icon-css/css/flag-icon.min.css">
@@ -50,7 +50,7 @@
                                 @endif
                                 <div class="form-group">
                                     <input type="email" class="form-control form-control-lg" id="exampleInputEmail1"
-                                        placeholder="Username" name="email">
+                                        placeholder="Username" name="email" value="{{ old('email') }}">
                                 </div>
                                 @error('email')
                                     <div>

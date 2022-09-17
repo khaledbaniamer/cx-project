@@ -49,7 +49,7 @@
                                 @endif
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-lg"
-                                        id="exampleInputUsername1" placeholder="Username" name="name">
+                                        id="exampleInputUsername1" placeholder="Username" name="name" value="{{ old('name') }}">
                                     @error('name')
                                         <div>
                                             <p class="text-danger">* {{ $message }}</p>
@@ -58,7 +58,7 @@
                                 </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control form-control-lg" id="exampleInputEmail1"
-                                        placeholder="Email" name="email">
+                                        placeholder="Email" name="email"  value="{{ old('email') }}">
                                     @error('email')
                                         <div>
                                             <p class="text-danger">* {{ $message }}</p>
@@ -77,8 +77,8 @@
                                 <div class="form-group">
                                     <input type="password" class="form-control form-control-lg"
                                         id="exampleInputPassword1" placeholder="Confirm Password"
-                                        name="password-confierm">
-                                    @error('password')
+                                        name="confirm_password">
+                                    @error('confirm_password')
                                         <div>
                                             <p class="text-danger">* {{ $message }}</p>
                                         </div>
